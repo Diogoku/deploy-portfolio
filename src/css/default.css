@@ -1,0 +1,32 @@
+:root {
+  --mainTextColor: #f3f3f3;
+  --secundaryTextColor: #0f0e0e;
+  --mainBorderColor: rgb(191, 191, 191);
+  --mainBackgroundColor: #1b1b1b;
+  --secundaryBackgroundColor: #e6e6e6;
+  --mainFocusColor: rgb(0, 255, 234);
+  font-size: 16px;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  color: var(--mainTextColor);
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--mainBackgroundColor);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section-tittle {
+  font-size: 28px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,117 @@
+.about-me-section {
+  position: relative;
+}
+
+.about-me-section-body {
+  position: absolute;
+  background-color: rgba(22, 22, 22, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-me-tittle {
+  text-align: center;
+}
+
+.focused-areas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.motivation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  row-gap: 3rem;
+  background-color: var(--mainBackgroundColor);
+  box-shadow: 0 0 1px var(--mainBorderColor);
+  padding: 0.5rem;
+}
+
+.motivation-container-extension {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.curriculum-link {
+  color: var(--mainFocusColor);
+}
+
+.motivation-tittle {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.logo-languages {
+  object-fit: cover;
+}
+
+/******** RESPONSIVE ********/
+
+@media screen and (min-width: 800px) {
+  .about-me-section {
+    height: 70vh;
+  }
+
+  .motivation-container {
+    width: 500px;
+  }
+
+  .logo-languages {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .about-me-section {
+    height: 60vh;
+  }
+
+  .motivation-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .focused-areas {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .logo-languages {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-me-section {
+    height: 75vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .about-me-section {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-me-section {
+    height: 100vh;
+  }
+}
