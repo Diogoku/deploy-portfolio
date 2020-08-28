@@ -25,18 +25,10 @@ function App() {
     <Provider store={store}>
       <Router>
         <Navbar />
-
-        <Switch>
-          <Route exact path="/">
-            <Main />
-            <Projects />
-            <AboutMe />
-            <ContactMe />
-          </Route>
-          <Route path="/about">
-            <AboutMe />
-          </Route>
-        </Switch>
+        <Main />
+        <Projects />
+        <AboutMe />
+        <ContactMe />
       </Router>
     </Provider>
   );
