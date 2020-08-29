@@ -14,6 +14,8 @@ import "../../css/projectsSection.css";
 import PokedexImage from "../../images/Pokédex_logo.PNG";
 import HangmanImage from "../../images/hangman_project.PNG";
 import FusoesImage from "../../images/fusoes_project.PNG";
+import ExpenseTrackerImage from "../../images/expense_tracker_logo.PNG";
+import CustomLoginImage from "../../images/login_logo.PNG";
 
 function Projects() {
   useEffect(() => {
@@ -41,6 +43,16 @@ function Projects() {
         <ProjectCard
           projectImage={FusoesImage}
           projectDescription={"Fusões Academia, Karate Site"}
+        />
+        <ProjectCard
+          projectImage={ExpenseTrackerImage}
+          projectDescription={"Keep track of your cash flow"}
+        />
+        <ProjectCard
+          projectImage={CustomLoginImage}
+          projectDescription={
+            "Default Login Form, with the possibility to change the color of the various elements"
+          }
         />
       </div>
     </section>

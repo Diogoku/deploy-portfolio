@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
 
-// REACT ROUTER
-import { Link } from "react-router-dom";
-
 // AOS
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,8 +16,7 @@ function ProjectCard({ projectImage, projectDescription }) {
   }, []);
 
   return (
-    <Link
-      to="#"
+    <div
       className="project-card link"
       data-aos="zoom-in"
       data-aos-duration="0.5s"
@@ -32,7 +28,7 @@ function ProjectCard({ projectImage, projectDescription }) {
       >
         <p>{projectDescription}</p>
       </motion.div>
-    </Link>
+    </div>
   );
 }
 
