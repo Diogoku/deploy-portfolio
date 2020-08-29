@@ -3,9 +3,6 @@ import React, { useEffect, useState } from "react";
 // REACT HOOK FORM
 import { useForm } from "react-hook-form";
 
-// AXIOS
-import axios from "axios";
-
 // AOS
 import Aos from "aos";
 import "aos/dist/aos.css";

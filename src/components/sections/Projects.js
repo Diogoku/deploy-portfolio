@@ -11,9 +11,9 @@ import "aos/dist/aos.css";
 import "../../css/projectsSection.css";
 
 // IMAGES
-import PokedexImage from "../../images/Pokédex_logo.png";
-import HangmanImage from "../../images/hangman_project.png";
-import FusoesImage from "../../images/fusoes_project.png";
+import PokedexImage from "../../images/Pokédex_logo.PNG";
+import HangmanImage from "../../images/hangman_project.PNG";
+import FusoesImage from "../../images/fusoes_project.PNG";
 
 function Projects() {
   useEffect(() => {
