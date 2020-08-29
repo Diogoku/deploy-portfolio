@@ -5,6 +5,7 @@
   --mainBackgroundColor: #1b1b1b;
   --secundaryBackgroundColor: #e6e6e6;
   --mainFocusColor: rgb(0, 255, 234);
+  --mainErrorMessageColor: rgb(122, 0, 0);
   font-size: 16px;
 }
 
@@ -29,4 +30,8 @@ body {
 .section-tittle {
   font-size: 28px;
   text-transform: uppercase;
+}
+
+.error-message {
+  color: var(--mainErrorMessageColor);
 }

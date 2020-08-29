@@ -7,6 +7,9 @@ import { useForm } from "react-hook-form";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+// FONT AWESOME ICONS
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 // CSS
 import "../../css/contactMeSection.css";
 
@@ -21,17 +24,17 @@ function ContactMe() {
     Aos.init();
   }, []);
 
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, getValues, errors } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data, "data Caralho");
-    fetch("/", {
+    /*fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", data }),
     })
       .then((data) => console.log(data))
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error));*/
+    console.log(data);
   };
 
   return (
@@ -59,9 +62,21 @@ function ContactMe() {
           id="name"
           name="name"
           className="input"
-          ref={register({ required: true })}
+          ref={register({ required: true, maxLength: 60 })}
         />
-        {errors.name && <span>This field is required</span>}
+        {errors.name && errors.name.type === "required" && (
+          <span className="error-message">
+            <FontAwesomeIcon icon="exclamation-triangle" />
+            This field is required
+          </span>
+        )}
+        {errors.name && errors.name.type === "maxLength" && (
+          <span className="error-message">
+            <FontAwesomeIcon icon="exclamation-triangle" />
+            The max length of 60 characters is reached, you typed{" "}
+            {getValues("name").length} characters.
+          </span>
+        )}
         <label htmlFor="email" className="label">
           Email
         </label>
@@ -70,9 +85,21 @@ function ContactMe() {
           id="email"
           name="email"
           className="input"
-          ref={register({ required: true })}
+          ref={register({ required: true, maxLength: 100 })}
         />
-        {errors.email && <span>This field is required</span>}
+        {errors.email && errors.email.type === "required" && (
+          <span className="error-message">
+            <FontAwesomeIcon icon="exclamation-triangle" />
+            This field is required
+          </span>
+        )}
+        {errors.email && errors.email.type === "maxLength" && (
+          <span className="error-message">
+            <FontAwesomeIcon icon="exclamation-triangle" />
+            The max length of 100 characters is reached, you typed{" "}
+            {getValues("email").length} characters.
+          </span>
+        )}
         <label htmlFor="message" className="label">
           Message
         </label>
@@ -82,9 +109,21 @@ function ContactMe() {
           className="input"
           rows="4"
           cols="50"
-          ref={register({ required: true })}
+          ref={register({ required: true, maxLength: 500 })}
         />
-        {errors.message && <span>This field is required</span>}
+        {errors.message && errors.message.type === "required" && (
+          <span className="error-message">
+            <FontAwesomeIcon icon="exclamation-triangle" />
+            This field is required
+          </span>
+        )}
+        {errors.message && errors.message.type === "maxLength" && (
+          <span className="error-message">
+            <FontAwesomeIcon icon="exclamation-triangle" />
+            The max length of 500 characters is reached, you typed{" "}
+            {getValues("message").length} characters.
+          </span>
+        )}
         <input type="submit" value="Submit" className="contact-submit-button" />
       </form>
     </section>
