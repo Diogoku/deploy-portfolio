@@ -66,15 +66,20 @@ function ContactMe() {
         />
         {errors.name && errors.name.type === "required" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
+            <FontAwesomeIcon
+              className="error-message"
+              icon="exclamation-triangle"
+            />
             This field is required
           </span>
         )}
         {errors.name && errors.name.type === "maxLength" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            The max length of 60 characters is reached, you typed{" "}
-            {getValues("name").length} characters.
+            <FontAwesomeIcon
+              className="error-message"
+              icon="exclamation-triangle"
+            />
+            The max length of 60 characters is reached.
           </span>
         )}
         <label htmlFor="email" className="label">
@@ -89,15 +94,20 @@ function ContactMe() {
         />
         {errors.email && errors.email.type === "required" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
+            <FontAwesomeIcon
+              className="error-message"
+              icon="exclamation-triangle"
+            />
             This field is required
           </span>
         )}
         {errors.email && errors.email.type === "maxLength" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            The max length of 100 characters is reached, you typed{" "}
-            {getValues("email").length} characters.
+            <FontAwesomeIcon
+              className="error-message"
+              icon="exclamation-triangle"
+            />
+            The max length of 100 characters is reached.
           </span>
         )}
         <label htmlFor="message" className="label">
@@ -113,15 +123,20 @@ function ContactMe() {
         />
         {errors.message && errors.message.type === "required" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
+            <FontAwesomeIcon
+              className="error-message"
+              icon="exclamation-triangle"
+            />
             This field is required
           </span>
         )}
         {errors.message && errors.message.type === "maxLength" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            The max length of 500 characters is reached, you typed{" "}
-            {getValues("message").length} characters.
+            <FontAwesomeIcon
+              className="error-message"
+              icon="exclamation-triangle"
+            />
+            The max length of 500 characters is reached.
           </span>
         )}
         <input type="submit" value="Submit" className="contact-submit-button" />
