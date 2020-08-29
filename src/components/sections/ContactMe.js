@@ -7,9 +7,6 @@ import { useForm } from "react-hook-form";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// FONT AWESOME ICONS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 // CSS
 import "../../css/contactMeSection.css";
 
@@ -65,15 +62,11 @@ function ContactMe() {
           ref={register({ required: true, maxLength: 60 })}
         />
         {errors.name && errors.name.type === "required" && (
-          <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            This field is required
-          </span>
+          <span className="error-message">* This field is required</span>
         )}
         {errors.name && errors.name.type === "maxLength" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            The max length of 60 characters is reached.
+            * The max length of 60 characters is reached.
           </span>
         )}
         <label htmlFor="email" className="label">
@@ -87,15 +80,11 @@ function ContactMe() {
           ref={register({ required: true, maxLength: 100 })}
         />
         {errors.email && errors.email.type === "required" && (
-          <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            This field is required
-          </span>
+          <span className="error-message">* This field is required</span>
         )}
         {errors.email && errors.email.type === "maxLength" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            The max length of 100 characters is reached.
+            * The max length of 100 characters is reached.
           </span>
         )}
         <label htmlFor="message" className="label">
@@ -110,15 +99,11 @@ function ContactMe() {
           ref={register({ required: true, maxLength: 500 })}
         />
         {errors.message && errors.message.type === "required" && (
-          <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            This field is required
-          </span>
+          <span className="error-message">* This field is required</span>
         )}
         {errors.message && errors.message.type === "maxLength" && (
           <span className="error-message">
-            <FontAwesomeIcon icon="exclamation-triangle" />
-            The max length of 500 characters is reached.
+            * The max length of 500 characters is reached.
           </span>
         )}
         <input type="submit" value="Submit" className="contact-submit-button" />
