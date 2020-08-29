@@ -36,7 +36,7 @@ function Projects() {
           }
         />
         <ProjectCard
-          projectLink={"https://diogoku.github.io/pokedex/"}
+          projectLink={"https://github.com/Diogoku/hangman.git"}
           projectImage={HangmanImage}
           projectDescription={
             "Discover the word your friend thought, before he d _ _ s"
