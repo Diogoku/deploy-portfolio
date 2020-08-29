@@ -17,6 +17,10 @@
   height: 100%;
 }
 
+.logo-letters:hover {
+  cursor: pointer;
+}
+
 .logo-letter {
   font-size: 32px;
   font-weight: bold;
@@ -90,6 +94,7 @@
 .navbar-link:hover {
   border-bottom: 1px solid var(--mainFocusColor);
   color: var(--mainFocusColor);
+  cursor: pointer;
 }
 
 Link:hover {

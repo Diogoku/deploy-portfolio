@@ -28,15 +28,12 @@ function Navbar() {
   return (
     <div className="header">
       <div className="logo-wrapper">
-        <Link
-          to="intro-wrapper"
-          activeClass="link logo-letters"
-          smooth={true}
-          duration={500}
-        >
-          <span className="logo-letter logo-first-letter">D</span>
-          <span className="logo-letter logo-second-letter">R</span>
-        </Link>
+        <div className="link logo-letters">
+          <Link to="intro-wrapper" smooth={true} duration={500}>
+            <span className="logo-letter logo-first-letter">D</span>
+            <span className="logo-letter logo-second-letter">R</span>
+          </Link>
+        </div>
       </div>
       <nav className="navbar">
         <FontAwesomeIcon
@@ -48,7 +45,7 @@ function Navbar() {
           <li className="navbar-item">
             <Link
               to="projects-section"
-              activeClass="link navbar-link"
+              className="link navbar-link"
               smooth={true}
               duration={500}
               spy={true}
@@ -59,7 +56,7 @@ function Navbar() {
           <li className="navbar-item">
             <Link
               to="about-me-section"
-              activeClass="link navbar-link"
+              className="link navbar-link"
               smooth={true}
               duration={500}
               spy={true}
@@ -70,7 +67,7 @@ function Navbar() {
           <li className="navbar-item">
             <Link
               to="contact-section"
-              activeClass="link navbar-link"
+              className="link navbar-link"
               smooth={true}
               duration={500}
               spy={true}

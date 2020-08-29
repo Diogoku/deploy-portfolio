@@ -28,16 +28,22 @@ function Main() {
             Nice to meet you! I'm a Frontend Web Developer.
           </h2>
           <div className="intro-presentation-list">
-            <div className="intro-presentation-link">
-              <Link to="projects-section" smooth={true} duration={500}>
-                View Portfolio
-              </Link>
-            </div>
-            <div className="intro-presentation-link">
-              <Link to="contact-section" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </div>
+            <Link
+              to="projects-section"
+              className="intro-presentation-link"
+              smooth={true}
+              duration={500}
+            >
+              View Portfolio
+            </Link>
+            <Link
+              to="contact-section"
+              className="intro-presentation-link"
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </Link>
           </div>
         </motion.div>
       </div>
