@@ -10,14 +10,14 @@ import { motion } from "framer-motion";
 // CSS
 import "../css/projectsSection.css";
 
-function ProjectCard({ projectImage, projectDescription }) {
+function ProjectCard({ projectLink, projectImage, projectDescription }) {
   useEffect(() => {
     Aos.init({ once: false });
   }, []);
 
   return (
     <a
-      href="https://diogoku.github.io/deploy-portfolio/"
+      href={projectLink}
       target="_blank"
       className="project-card link"
       data-aos="zoom-in"

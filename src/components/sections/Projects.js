@@ -29,26 +29,31 @@ function Projects() {
       </p>
       <div className="projects-wrapper">
         <ProjectCard
+          projectLink={"https://diogoku.github.io/pokedex/"}
           projectImage={PokedexImage}
           projectDescription={
             "Search for a first generation Pokémon  by name, and see it's description"
           }
         />
         <ProjectCard
+          projectLink={"https://diogoku.github.io/pokedex/"}
           projectImage={HangmanImage}
           projectDescription={
             "Discover the word your friend thought, before he d _ _ s"
           }
         />
         <ProjectCard
+          projectLink={"https://diogoku.github.io/pokedex/"}
           projectImage={FusoesImage}
           projectDescription={"Fusões Academia, Karate Site"}
         />
         <ProjectCard
+          projectLink={"https://diogoku.github.io/pokedex/"}
           projectImage={ExpenseTrackerImage}
           projectDescription={"Keep track of your cash flow"}
         />
         <ProjectCard
+          projectLink={"https://diogoku.github.io/pokedex/"}
           projectImage={CustomLoginImage}
           projectDescription={
             "Default Login Form, with the possibility to change the color of the various elements"
