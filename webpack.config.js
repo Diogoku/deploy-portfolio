@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+// publicPath: "/deploy-portfolio/",
 module.exports = {
   entry: "./src/index.js",
   output: {

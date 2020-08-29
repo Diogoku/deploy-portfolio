@@ -47,6 +47,7 @@
 .intro-presentation-link:hover {
   color: var(--mainFocusColor);
   border-color: var(--mainFocusColor);
+  cursor: pointer;
 }
 
 /******** RESPONSIVE ********/

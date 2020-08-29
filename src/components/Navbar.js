@@ -1,7 +1,7 @@
 import React from "react";
 
-// REACT ROUTER
-import { NavLink, Link } from "react-router-dom";
+// REACT SMOOTH SCROLLBAR
+import { Link } from "react-scroll";
 
 // FONT AWESOME ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,10 +28,15 @@ function Navbar() {
   return (
     <div className="header">
       <div className="logo-wrapper">
-        <NavLink to="/" className="link logo-letters">
+        <Link
+          to="intro-wrapper"
+          activeClass="link logo-letters"
+          smooth={true}
+          duration={500}
+        >
           <span className="logo-letter logo-first-letter">D</span>
           <span className="logo-letter logo-second-letter">R</span>
-        </NavLink>
+        </Link>
       </div>
       <nav className="navbar">
         <FontAwesomeIcon
@@ -41,19 +46,37 @@ function Navbar() {
         />
         <ul className="navbar-nav">
           <li className="navbar-item">
-            <a href="#projects-section" className="link navbar-link">
+            <Link
+              to="projects-section"
+              activeClass="link navbar-link"
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
               Projects
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="#about-me-section" className="link navbar-link">
+            <Link
+              to="about-me-section"
+              activeClass="link navbar-link"
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
               About Me
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="#contact-section" className="link navbar-link">
+            <Link
+              to="contact-section"
+              activeClass="link navbar-link"
+              smooth={true}
+              duration={500}
+              spy={true}
+            >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

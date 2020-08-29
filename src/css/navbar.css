@@ -48,6 +48,10 @@
   overflow: hidden;
 }
 
+.navbar-item:hover {
+  cursor: pointer;
+}
+
 .navbar-item::before,
 .navbar-item::after {
   content: "";
@@ -86,6 +90,10 @@
 .navbar-link:hover {
   border-bottom: 1px solid var(--mainFocusColor);
   color: var(--mainFocusColor);
+}
+
+Link:hover {
+  cursor: pointer;
 }
 
 .bars-icon {

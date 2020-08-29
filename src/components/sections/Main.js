@@ -1,5 +1,8 @@
 import React from "react";
 
+// REACT SMOOTH SCROLLBAR
+import { Link } from "react-scroll";
+
 // MOTION
 import { motion } from "framer-motion";
 
@@ -11,7 +14,7 @@ import BackgroundImage from "../../images/background.PNG";
 
 function Main() {
   return (
-    <section className="intro-wrapper">
+    <section id="intro-wrapper" className="intro-wrapper">
       <img src={BackgroundImage} className="background-image"></img>
       <div className="intro-presentation-wrapper">
         <motion.div
@@ -24,18 +27,18 @@ function Main() {
           <h2 className="intro-presentation">
             Nice to meet you! I'm a Frontend Web Developer.
           </h2>
-          <ul className="intro-presentation-list">
-            <li className="intro-presentation-list-item">
-              <a href="#" className="intro-presentation-link">
+          <div className="intro-presentation-list">
+            <div className="intro-presentation-link">
+              <Link to="projects-section" smooth={true} duration={500}>
                 View Portfolio
-              </a>
-            </li>
-            <li className="intro-presentation-list-item">
-              <a href="#" className="intro-presentation-link">
+              </Link>
+            </div>
+            <div className="intro-presentation-link">
+              <Link to="contact-section" smooth={true} duration={500}>
                 Contact
-              </a>
-            </li>
-          </ul>
+              </Link>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
