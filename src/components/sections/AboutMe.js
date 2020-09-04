@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import "../../css/aboutMeSection.css";
 
 // IMAGE
-import BackgroundImage from "../../images/background.PNG";
+import BackgroundImage from "../../images/backgroundAboutMe.jpg";
 import JSLogo from "../../images/js_logo.PNG";
 import NodeLogo from "../../images/node_logo.PNG";
 import ReactLogo from "../../images/react_logo.PNG";

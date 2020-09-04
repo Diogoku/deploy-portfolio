@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import "../../css/mainSection.css";
 
 // IMAGE
-import BackgroundImage from "../../images/background.PNG";
+import BackgroundImage from "../../images/backgroundMain.jpg";
 
 function Main() {
   return (
