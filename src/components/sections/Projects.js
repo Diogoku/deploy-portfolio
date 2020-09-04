@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 import "../../css/projectsSection.css";
 
 // IMAGES
-import PokedexImage from "../../images/Pokédex_logo.PNG";
+import GoogleBooksAPIImage from "../../images/google-books_logo.PNG";
 import HangmanImage from "../../images/hangman_project.PNG";
 import FusoesImage from "../../images/fusoes_project.PNG";
 import ExpenseTrackerImage from "../../images/expense_tracker_logo.PNG";
@@ -28,10 +28,10 @@ function Projects() {
       </p>
       <div className="projects-wrapper">
         <ProjectCard
-          projectLink={"https://diogoku.github.io/pokedex/"}
-          projectImage={PokedexImage}
+          projectLink={"https://diogoku.github.io/googleBooksAPI/"}
+          projectImage={GoogleBooksAPIImage}
           projectDescription={
-            "Search for a first generation Pokémon  by name, and see it's description"
+            "Google Books has a mission to digitize the world's book content and make it more discoverable on the Web. "
           }
         />
         <ProjectCard
