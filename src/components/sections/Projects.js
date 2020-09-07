@@ -15,6 +15,7 @@ import GoogleBooksAPIImage from "../../images/google-books_logo.PNG";
 import HangmanImage from "../../images/hangman_project.PNG";
 import FusoesImage from "../../images/fusoes_project.PNG";
 import ExpenseTrackerImage from "../../images/expense_tracker_logo.PNG";
+import WhatsAppGroupImage from "../../images/whatsapp_logo.PNG";
 
 function Projects() {
   useEffect(() => {
@@ -50,6 +51,11 @@ function Projects() {
           projectLink={"https://diogoku.github.io/expenseTracker/"}
           projectImage={ExpenseTrackerImage}
           projectDescription={"Keep track of your cash flow"}
+        />
+        <ProjectCard
+          projectLink={"https://whatsapp-mern-849a1.web.app/"}
+          projectImage={WhatsAppGroupImage}
+          projectDescription={"WhatsApp Group - MERN"}
         />
       </div>
     </section>
