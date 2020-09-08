@@ -16,6 +16,7 @@ import HangmanImage from "../../images/hangman_project.PNG";
 import FusoesImage from "../../images/fusoes_project.PNG";
 import ExpenseTrackerImage from "../../images/expense_tracker_logo.PNG";
 import WhatsAppGroupImage from "../../images/whatsapp_logo.PNG";
+import NetflixImage from "../../images/netflix_logo.PNG";
 
 function Projects() {
   useEffect(() => {
@@ -56,6 +57,11 @@ function Projects() {
           projectLink={"https://whatsapp-mern-849a1.web.app/"}
           projectImage={WhatsAppGroupImage}
           projectDescription={"WhatsApp Group - MERN"}
+        />
+        <ProjectCard
+          projectLink={"https://netflix-clone-1bb45.firebaseapp.com/"}
+          projectImage={NetflixImage}
+          projectDescription={"Netflix Dashboard"}
         />
       </div>
     </section>
