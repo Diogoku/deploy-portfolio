@@ -17,6 +17,7 @@ import FusoesImage from "../../images/fusoes_project.PNG";
 import ExpenseTrackerImage from "../../images/expense_tracker_logo.PNG";
 import WhatsAppGroupImage from "../../images/whatsapp_logo.PNG";
 import NetflixImage from "../../images/netflix_logo.PNG";
+import Teste from "../../images/teste.JPG";
 
 function Projects() {
   useEffect(() => {
@@ -63,6 +64,7 @@ function Projects() {
           projectImage={NetflixImage}
           projectDescription={"Netflix Dashboard"}
         />
+        <img className="teste" src={Teste} alt="netflix" />
       </div>
     </section>
   );
