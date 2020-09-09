@@ -63,9 +63,3 @@
   color: var(--secundaryTextColor);
   text-align: center;
 }
-
-.teste {
-  width: 250px;
-  height: 300px;
-  object-fit: contain;
-}

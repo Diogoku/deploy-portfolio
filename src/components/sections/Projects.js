@@ -64,7 +64,6 @@ function Projects() {
           projectImage={NetflixImage}
           projectDescription={"Netflix Dashboard"}
         />
-        <img className="teste" src={Teste} alt="netflix" />
       </div>
     </section>
   );
